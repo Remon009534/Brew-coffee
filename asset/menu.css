@@ -1,0 +1,149 @@
+.menu-hero
+{
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#E9DDCC;
+}
+.menu-hero h1
+{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-size: clamp(100px, 15vw, 220px);
+    color: #2A1F1A;
+}
+.menu 
+{
+    min-height: 100vh;
+    padding: 100px 6%;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+.menu .menu-options
+{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.menu .menu-options button
+{
+    padding: 12px 24px;
+    border: 1px solid #2b1b12;
+    border-radius: 999px;
+    background: transparent;
+    color: #2b1b12;
+    font-size: 14px;
+    cursor: pointer;
+}
+.menu .menu-options button.active
+{
+    background-color: #2b1b12;
+    color: #f4ebdd;
+}
+.menu .menu-items
+{
+    flex-grow: 1;
+    width: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.coffee, .dessert, .food
+{
+    width: 100%;
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.menu-items div .feature-card
+{
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+        opacity 0.45s ease,
+        transform 0.45s ease,
+        background-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+.menu-items div .feature-card.show
+{
+    animation: cardIn 0.45s ease forwards;
+}
+.feature-card.show:hover
+{
+    transform: translateY(-8px);
+    background-color: #2b1b12;
+    color: #f4ebdd;
+}
+#image4{background-image: url('../image/EZFI3zv4sbg-uCOmVpO0sUtfs4AtezIwUeSRJIPNT-TrhndQPssKsXjcZ_xLD2lQFKZYd7ZONFowSmReIxorKJO0D6LMUBdML33Y9TNMNUErSFtw0mCtuj--6qYEZPzA-FBSKivYH2rYCJ9Xv9yj6BWy98Ux9aH5EfRuKTNN9iZr7TGBb0VaNbD9_tyRxZFV.jpg');}
+@keyframes cardIn
+{
+    from {
+        opacity: 0;
+        translate: 0 20px;
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+.dessert .feature-card .image
+{
+    background-image: url('../image/KggJBWhkGCusIx6zr3YHaePdNsTbsLTFfZZeWU1MdvMChzebHxj3O_nrfNLk5h5x6hFqUoQqKwVKAR2fm5LSmXGP2-apMcsoMCOTH6HQvFxLxTIvm0RvRz4-5m4Hh0koYqAFXJ6bEwaOAKrbSLaGTQjrbauLjuukTqm4_3kpdM3icrYDL-cOHL1yz2RmhMpC.jpg');
+}
+.food .feature-card .image
+{
+    background-image: url('../image/hpAJuekT3ScoA0biljylbtpD6YYQnDcT2PMBTSe8Ile-0GOLyA27dmoL0uK8kIFLQHhPUOnWaztwzjDKSDk-J_eJBpXNTBoj4nxc-Lc7s7qJJaas8_aDfP4y1NcsAksOb_jf4IfXYgHJnAuBs1vzs1mfcx4qJJ2D9zBDQALYn51FKEx9sTb1I0Iw6d5vwJlx.jpg');
+}
+.dessert #image2{background-image: url('../image/kzlwJx6i1NcroPu-WPrF-ZYmnfxC_wB6kiJZJXtfvgZ98o7kIzQ6UlL0LsjPdwwNsyA2oqAQIvmspPeUri_swsCEUj_ue7KJXC5YVGNBzWofrbwouQR67zPMwoDKo-NS375tqaj2MoK9MYOiRrV_6yOFCIBbdL0AkYRh0uoywkSQN66dukKgeh1QG2QxUl0d.jpg');}
+.dessert #image3{background-image: url('../image/Br0T5M-cRjK4VpB2JIFKEU9uTEec3aXuHw1JDBsmQV7OXbQPlZg6ORdnnGwArMZd_LoRCjwt4nhYDW_ebktE2l393P9lGJsIiHumWUr1fpL_4pP0LFcvQSig5aVUHiZmLyRUOIwd_A50Y4V4wCzMZSIog3j2MUJb-6fiu0mleg8.jpg');}
+.dessert #image4{background-image: url('../image/c7EHYL4IZIKYsQqp89wZdr9Ds3eBEZGhP932gvqvLuyf0dKEMkQSSNNDjol4SjM5Z5PP84lF2C0BB1Ae5A9BO-euqyMHIKB4iwjy46WPD4eVjOQq2b_3u8VJqrHwk0zd47DUxRB7b94hj1qu8_YtGHyVLVOc_22159LxXzhGle2Yb0JvybX-3v5damP09bi1.jpg');}
+.food #image2{background-image: url('../image/K0XwE4UX7W3Y9vk5s-W2_wxrPinN5SkmIAoDahXZN9IMp8rX1Kq-HY9QjAEvZVmAaObsa_SkKiS4-JiCYJSSUBSSvcfrhRiDa7ly7dnhA7V0F5th6OVbAEjGQcKgpbTc1knEtPWpJmUW3grd83OY1kVEWhTH6d_qMKbRAC5HwQ2TLfG7XarHSio03Pn-YsZa.jpg');}
+.food #image3{background-image: url('../image/Rhbs_D-GYYdmxifv-6SS2lQ1hXA1XPlYMrnQabwn1kz_Ex_qu4bigr5qUms8_PdexrNb3vDLpJT9bXjPRLOXgZTjNjkwgJKSnoJkKBow4G5afFdzplAFyx_oy8YwCoI_NL7QPxGAxT6l7cKM0N5GpXQ5ADuTdIqSkcwfrkRV6HijPrnI8GATfZ840Db5bep3.jpg')}
+.food #image4{background-image: url('../image/mbOSczZ58cqvX_Nues8p2gQIKtrzgykj0qmO_FQucc2Vv-0IGukjNXjNYNR6wmfu7s248JUXqZvH8dTooiRYIUR6NsBl8fl-S-aZcxtj6Wu5yzXa6fLWJPVenjXYKzD8FO5phfeveskuFEVi4ZhI9XAR_W51jQOH402jSKE-ViHNENN0jXGSyMO9pP7cKF5T.jpg');}
+
+@media (max-width: 768px) {
+
+    .menu-hero {
+        min-height: 40vh;
+    }
+
+    .menu-hero h1 {
+        font-size: clamp(80px, 22vw, 130px);
+    }
+
+    .menu {
+        padding: 60px 16px;
+        gap: 35px;
+    }
+
+    .menu .menu-options {
+        gap: 12px;
+        padding: 0;
+    }
+
+    .menu .menu-options button {
+        padding: 11px 20px;
+    }
+
+    .menu .menu-items {
+        width: 100%;
+    }
+
+    .coffee,
+    .dessert,
+    .food {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .feature-card {
+        width: min(350px, 100%);
+        margin: 0 auto;
+    }
+}
