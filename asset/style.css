@@ -416,6 +416,15 @@ footer a:hover {
 }
 @media (max-width: 768px)
 {
+    html, body
+    {
+        overflow-x: hidden;
+    }
+    .hero-section
+    {
+        width: 100%;
+        max-width: 100%;
+    }
     .hero-section .right-section
     {
         display: none;
@@ -442,5 +451,42 @@ footer a:hover {
        flex-direction: column;
         gap: 30px;
         width: 100%;
+    }
+    footer
+    {
+        padding: 50px 28px 25px;
+        min-height: auto;
+    }
+    .footer-top
+    {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px 30px;
+    }
+    .footer-brand h2
+    {
+        font-size: 60px;
+    }
+    .footer-bottom
+    {
+        margin-top: 50px;
+        gap: 20px;
+    }
+    .story .our-story
+    {
+        min-height: auto;
+        padding: 80px 25px;
+    }
+    .our-story h1
+    {
+        position: static;
+        font-size: clamp(50px, 15vw 80px);
+        margin-bottom: 60px;
+    }
+    .our-story p
+    {
+        position: static;
+        max-width: none;
+        font-size: 17px;
+        line-height: 1.7;
     }
 }
