@@ -432,6 +432,7 @@ footer a:hover {
     .hero-section .left-section
     {
         width: 100%;
+        justify-content: space-between;
     }
     .hero-section .left-section .main-container
     {
@@ -441,6 +442,14 @@ footer a:hover {
     {
         text-align: center;
         justify-content: center;
+    }
+    .hero-section .left-section .main-container h1
+    {
+        font-size: 50px;
+    }
+    .hero-section .left-section .main-container p
+    {
+        width: 300px;
     }
     .feature-cards
     {
@@ -488,5 +497,9 @@ footer a:hover {
         max-width: none;
         font-size: 17px;
         line-height: 1.7;
+    }
+    .cta .center h1
+    {
+        font-size: 80px;
     }
 }
