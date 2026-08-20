@@ -434,6 +434,10 @@ footer a:hover {
         width: 100%;
         justify-content: space-between;
     }
+    .hero-section .left-section h2
+    {
+        font-size: 40px;
+    }
     .hero-section .left-section .main-container
     {
         align-items: center;
@@ -451,6 +455,10 @@ footer a:hover {
     {
         width: 300px;
     }
+    .featured
+    {
+        row-gap: 20px;
+    }
     .feature-cards
     {
         width: 100%;
@@ -460,6 +468,10 @@ footer a:hover {
        flex-direction: column;
         gap: 30px;
         width: 100%;
+    }
+    .featured .featured-header h2
+    {
+        font-size: 30px;
     }
     footer
     {
